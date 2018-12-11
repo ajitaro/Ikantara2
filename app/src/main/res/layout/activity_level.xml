@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/level_bg">
+
+    <ImageView
+        android:id="@+id/indonesiaMap"
+        android:layout_width="316dp"
+        android:layout_height="148dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/indonesia_map" />
+
+    <Button
+        android:id="@+id/lvl1Btn"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/lvl_btn"
+        android:text="@string/level_1"
+        android:textAlignment="textStart"
+        android:paddingStart="20dp"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/lvl2Btn"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/lvl1Btn"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/lvl_btn"
+        android:text="Level 2"
+        android:textAlignment="textStart"
+        android:paddingStart="20dp"
+        android:textColor="@android:color/background_light"/>
+
+    <Button
+        android:id="@+id/lvl3Btn"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/lvl2Btn"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/lvl_btn"
+        android:text="Level 3"
+        android:textAlignment="textStart"
+        android:paddingStart="20dp"
+        android:textColor="@android:color/background_light"/>
+
+    <Button
+        android:id="@+id/lvl4Btn"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/lvl3Btn"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/lvl_btn"
+        android:text="Level 4"
+        android:textAlignment="textStart"
+        android:paddingStart="20dp"
+        android:textColor="@android:color/background_light"/>
+
+    <Button
+        android:id="@+id/lvl5Btn"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/lvl4Btn"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/lvl_btn"
+        android:text="Level 5"
+        android:textAlignment="textStart"
+        android:paddingStart="20dp"
+        android:textColor="@android:color/background_light"/>
+
+    <Button
+        android:id="@+id/selectBtn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/indonesiaMap"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="42dp"
+        android:background="@drawable/select_btn" />
+
+
+
+</RelativeLayout>
