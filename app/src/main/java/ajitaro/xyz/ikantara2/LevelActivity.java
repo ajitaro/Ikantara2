@@ -23,6 +23,8 @@ public class LevelActivity extends Activity {
         });
     }
     public void openSelectFish(){
-        return;
+        Intent intent = new Intent (this, ChooseFish.class);
+        startActivity(intent);
+        finish();
     }
 }
