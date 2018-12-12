@@ -149,10 +149,10 @@ public class GameActivity extends AppCompatActivity {
                 int offsetX = 0;
                 int offsetY = 0;
                 if (col > 0){
-                    offsetX = pieceWidth / 3;
+                    offsetX = pieceWidth/3;
                 }
                 if (row > 0){
-                    offsetY = pieceHeight / 3;
+                    offsetY = pieceHeight/3;
                 }
 
                 //apply the offset to each piece
@@ -168,7 +168,7 @@ public class GameActivity extends AppCompatActivity {
                 Bitmap puzzlePiece = Bitmap.createBitmap(pieceWidth + offsetX, pieceHeight + offsetY, Bitmap.Config.ARGB_8888);
 
                 //draw path
-                int bumpSize = pieceHeight / 4;
+//                int bumpSize = pieceHeight / 4;
                 Canvas canvas = new Canvas(puzzlePiece);
                 Path path    = new Path();
                 path.moveTo(offsetX, offsetY);
@@ -178,7 +178,7 @@ public class GameActivity extends AppCompatActivity {
                 } else {
                     //top bump
                     path.lineTo(offsetX + (pieceBitmap.getWidth() - offsetX) / 3, offsetY);
-                    path.cubicTo(offsetX + (pieceBitmap.getWidth() - offsetX) / 6, offsetY - bumpSize, offsetX + (pieceBitmap.getWidth() - offsetX) / 6 * 5, offsetY - bumpSize, offsetX + (pieceBitmap.getWidth() - offsetX) / 3 * 2, offsetY);
+//                    path.cubicTo(offsetX + (pieceBitmap.getWidth() - offsetX) / 6, offsetY - bumpSize, offsetX + (pieceBitmap.getWidth() - offsetX) / 6 * 5, offsetY - bumpSize, offsetX + (pieceBitmap.getWidth() - offsetX) / 3 * 2, offsetY);
                     path.lineTo(pieceBitmap.getWidth(), offsetY);
                 }
 
@@ -188,7 +188,7 @@ public class GameActivity extends AppCompatActivity {
                 } else {
                     //right bump
                     path.lineTo(pieceBitmap.getWidth(), offsetY + (pieceBitmap.getHeight() - offsetY) / 3);
-                    path.cubicTo(pieceBitmap.getWidth() - bumpSize,offsetY + (pieceBitmap.getHeight() - offsetY) / 6, pieceBitmap.getWidth() - bumpSize, offsetY + (pieceBitmap.getHeight() - offsetY) / 6 * 5, pieceBitmap.getWidth(), offsetY + (pieceBitmap.getHeight() - offsetY) / 3 * 2);
+//                    path.cubicTo(pieceBitmap.getWidth() - bumpSize,offsetY + (pieceBitmap.getHeight() - offsetY) / 6, pieceBitmap.getWidth() - bumpSize, offsetY + (pieceBitmap.getHeight() - offsetY) / 6 * 5, pieceBitmap.getWidth(), offsetY + (pieceBitmap.getHeight() - offsetY) / 3 * 2);
                     path.lineTo(pieceBitmap.getWidth(), pieceBitmap.getHeight());
                 }
 
@@ -198,7 +198,7 @@ public class GameActivity extends AppCompatActivity {
                 } else {
                     // bottom bump
                     path.lineTo(offsetX + (pieceBitmap.getWidth() - offsetX) / 3 * 2, pieceBitmap.getHeight());
-                    path.cubicTo(offsetX + (pieceBitmap.getWidth() - offsetX) / 6 * 5,pieceBitmap.getHeight() - bumpSize, offsetX + (pieceBitmap.getWidth() - offsetX) / 6, pieceBitmap.getHeight() - bumpSize, offsetX + (pieceBitmap.getWidth() - offsetX) / 3, pieceBitmap.getHeight());
+//                    path.cubicTo(offsetX + (pieceBitmap.getWidth() - offsetX) / 6 * 5,pieceBitmap.getHeight() - bumpSize, offsetX + (pieceBitmap.getWidth() - offsetX) / 6, pieceBitmap.getHeight() - bumpSize, offsetX + (pieceBitmap.getWidth() - offsetX) / 3, pieceBitmap.getHeight());
                     path.lineTo(offsetX, pieceBitmap.getHeight());
                 }
 
@@ -208,7 +208,7 @@ public class GameActivity extends AppCompatActivity {
                 } else {
                     // left bump
                     path.lineTo(offsetX, offsetY + (pieceBitmap.getHeight() - offsetY) / 3 * 2);
-                    path.cubicTo(offsetX - bumpSize, offsetY + (pieceBitmap.getHeight() - offsetY) / 6 * 5, offsetX - bumpSize, offsetY + (pieceBitmap.getHeight() - offsetY) / 6, offsetX, offsetY + (pieceBitmap.getHeight() - offsetY) / 3);
+//                    path.cubicTo(offsetX - bumpSize, offsetY + (pieceBitmap.getHeight() - offsetY) / 6 * 5, offsetX - bumpSize, offsetY + (pieceBitmap.getHeight() - offsetY) / 6, offsetX, offsetY + (pieceBitmap.getHeight() - offsetY) / 3);
                     path.close();
                 }
 

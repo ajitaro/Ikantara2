@@ -28,7 +28,7 @@
             android:screenOrientation="landscape"/>
         <activity
             android:name=".GameActivity"
-            android:screenOrientation="landscape"></activity>
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
